@@ -1,0 +1,5 @@
+/Users/ik/Documents/I.OkerekeCOS101/week-5/practice_2/target/debug/deps/practice_2-32ee077e52d0ad79.d: src/main.rs
+
+/Users/ik/Documents/I.OkerekeCOS101/week-5/practice_2/target/debug/deps/practice_2-32ee077e52d0ad79: src/main.rs
+
+src/main.rs:
