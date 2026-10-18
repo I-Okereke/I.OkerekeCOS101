@@ -1,0 +1,50 @@
+   0.007902417s  INFO prepare_target{force=false package_id=project_1 v0.1.0 (/Users/ik/Documents/I.OkerekeCOS101/week-8/project_1) target="project_1"}: cargo::core::compiler::fingerprint: fingerprint error for project_1 v0.1.0 (/Users/ik/Documents/I.OkerekeCOS101/week-8/project_1)/Check { test: false }/TargetInner { name: "project_1", doc: true, ..: with_path("/Users/ik/Documents/I.OkerekeCOS101/week-8/project_1/src/main.rs", Edition2024) }
+   0.007924334s  INFO prepare_target{force=false package_id=project_1 v0.1.0 (/Users/ik/Documents/I.OkerekeCOS101/week-8/project_1) target="project_1"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/ik/Documents/I.OkerekeCOS101/week-8/project_1/target/debug/.fingerprint/project_1-3d5f19ddc4651152/bin-project_1`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.013082167s  INFO prepare_target{force=false package_id=project_1 v0.1.0 (/Users/ik/Documents/I.OkerekeCOS101/week-8/project_1) target="project_1"}: cargo::core::compiler::fingerprint: fingerprint error for project_1 v0.1.0 (/Users/ik/Documents/I.OkerekeCOS101/week-8/project_1)/Check { test: true }/TargetInner { name: "project_1", doc: true, ..: with_path("/Users/ik/Documents/I.OkerekeCOS101/week-8/project_1/src/main.rs", Edition2024) }
+   0.013096375s  INFO prepare_target{force=false package_id=project_1 v0.1.0 (/Users/ik/Documents/I.OkerekeCOS101/week-8/project_1) target="project_1"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/ik/Documents/I.OkerekeCOS101/week-8/project_1/target/debug/.fingerprint/project_1-f4a9a5da04690f3f/test-bin-project_1`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+    Checking project_1 v0.1.0 (/Users/ik/Documents/I.OkerekeCOS101/week-8/project_1)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.18s

@@ -1,0 +1,26 @@
+   0.012971542s  INFO prepare_target{force=false package_id=practice_7 v0.1.0 (/Users/ik/Documents/I.OkerekeCOS101/week-8/practice_7) target="practice_7"}: cargo::core::compiler::fingerprint: fingerprint error for practice_7 v0.1.0 (/Users/ik/Documents/I.OkerekeCOS101/week-8/practice_7)/Check { test: false }/TargetInner { name: "practice_7", doc: true, ..: with_path("/Users/ik/Documents/I.OkerekeCOS101/week-8/practice_7/src/main.rs", Edition2024) }
+   0.012992709s  INFO prepare_target{force=false package_id=practice_7 v0.1.0 (/Users/ik/Documents/I.OkerekeCOS101/week-8/practice_7) target="practice_7"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/ik/Documents/I.OkerekeCOS101/week-8/practice_7/target/debug/.fingerprint/practice_7-26e5d427d3035d3b/bin-practice_7`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+    Checking practice_7 v0.1.0 (/Users/ik/Documents/I.OkerekeCOS101/week-8/practice_7)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.25s
