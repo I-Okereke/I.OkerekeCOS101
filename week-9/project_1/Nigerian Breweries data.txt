@@ -1,0 +1,4 @@
+The categories of drinks Nigerian Breweries Plc make are
+Lager:33 Export,Desperados,Goldberg,Gulder,Heineken,Star
+Stout:Legend,Turbo king,Williams
+Non-alcoholic drinks:Maltina,Amstel Malta,Maltina Gold,Fayrouz
